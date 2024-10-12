@@ -4,6 +4,20 @@
     <link rel="stylesheet" href="../../css/forum/mobile/forum.css">
     <link rel="stylesheet" href="../../css/forum/tablet/forum.css">
     <link rel="stylesheet" href="../../css/forum/pc/forum.css">
+    <link rel="stylesheet" href="../../css/forum/mobile/carrossel.css">
+    <link rel="stylesheet" href="../../css/forum/tablet/carrossel.css">
+    <link rel="stylesheet" href="../../css/forum/pc/carrossel.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+
+    <style>
+        #topicos-populares{
+            margin-top: -100px;
+        }
+    </style>
 
 </head>
     <div id="forum">
@@ -76,9 +90,11 @@
         <!--Lista de tópicos populares-->
         <div class="topicos-populares">
             <h2 class="titulo-topicos-populares">Tópicos <span>populares</span></h2>
-            <div id="topicos-populares" class="topicos-populares-itens"></div>
         </div>
+        
+        <div id="topicos-populares" class="carousel" data-flickity='{ "wrapAround": true }'></div>
 
 
-    </div>    
+           
+    </div>
 </html>

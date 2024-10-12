@@ -30,6 +30,7 @@ function renderizar(pagina) {
         .then(data => {
             root.innerHTML = data
 
+            // aplica os scripts do carrossel em todas as paginas
             renderizarCarrossel();
             
             if (pagina === "home") {
@@ -40,7 +41,6 @@ function renderizar(pagina) {
                 renderizarDivs("cards-didaticos", cardsColorir, cards )
                 renderizarDivs("cards-materias", cardsMaterias, cards )
             }
-
             if(pagina === "forum"){
                 renderizarDivs("topicos-populares", topicosPrincipais, cardTopicosPrincipais)
                 renderizarDivs("topicos", itemTopico, cardItemTopico)

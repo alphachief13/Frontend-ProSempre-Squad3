@@ -17,6 +17,7 @@ const cardArtigo = `
 `
 
 const cardTopicosPrincipais = `
+                   <div class="carousel-cell">
     <div class="item-topico-popular">
         <div class="item-topico-popular-content">
 
@@ -42,6 +43,7 @@ const cardTopicosPrincipais = `
         </div>
 
     </div>
+                </div>
 `
 
 const cardItemTopico = `
