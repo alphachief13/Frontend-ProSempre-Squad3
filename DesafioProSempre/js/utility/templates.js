@@ -91,7 +91,7 @@ const cardItemTopico = `
 const cards = `
     <div class="item">
         <img src={imagem}>
-        <p>{descricao}</p>
+        <p class="my-paragraph">{descricao}</p>
     </div>
 `
 export { cardArtigo, carroselEquipe, cards, cardTopicosPrincipais, cardItemTopico }
