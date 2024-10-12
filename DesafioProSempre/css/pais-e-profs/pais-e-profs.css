@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
 
 :root {
     --roxo-principal: #704EEA;
@@ -64,8 +62,8 @@ span{
   font-size: 36px; 
   line-height: 52px;
   left: 100px;
+  padding-bottom: 2rem;
 }
-
 
 section.card-colorir,.card-didaticos,.card-pais{
   left: 140px;
@@ -76,7 +74,9 @@ section.card-colorir,.card-didaticos,.card-pais{
   padding-top: 50px;
   padding-bottom: 50px;
 }
-
+.rectangle-divider{
+  margin: 2px;
+}
 .card-colorir .rectangle-divider {
   width: var(--rectangle-width);  
   height: var(--rectangle-height);  
@@ -101,9 +101,27 @@ section.card-colorir,.card-didaticos,.card-pais{
   gap: 33px;
 }
 
+.item:hover
+{
+        -xpedu-transform: scale(0.5);
+        -ms-transform: scale(0.6);
+        transform: scale(1.1);
+}
 
 .item{
   position: relative;
+}
+
+.card-colorir .item .my-paragraph:hover{
+    color: var(--amarelo-principal);
+}
+
+.card-didaticos .item .my-paragraph:hover{
+  color: var(--roxo-principal);
+}
+
+.card-pais .carousel-cell .item .my-paragraph:hover{
+  color: var(--rosa-principal);
 }
 
 .item img{
