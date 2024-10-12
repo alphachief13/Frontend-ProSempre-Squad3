@@ -4,6 +4,17 @@ body, html {
   box-sizing: border-box;
 }
 
+.nav-ponto {
+  position: relative;
+  left: 50%;
+}
+
+.header a img {
+  display: none;
+  position: absolute;
+  margin: 3.4em 0 0 0;
+}
+
 /* header */
 
 
