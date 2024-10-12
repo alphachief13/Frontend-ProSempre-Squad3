@@ -3,7 +3,14 @@ Aplicação web do desafio ProSempre, feita usando JavaScript, HTML5 e Css3
 
 # Membros da equipe:
 ## Front-end: 
-- Pedro Henrique de Almeida Freitas
+- Pedro Henrique de Almeida Freitas (Home)
+- Victor Manuel Valentim Cordeiro (Forum)
+- Marinna Luiza Pereira de Souza (Pais e Professores)
+- Pedro Filipe Dantas (Videos)
+
+## Back-end:
+- Hipólito Filipe Costa de Araújo
+- Eduardo Teixeira de Moura Silva
 
 ### Mockup: https://www.figma.com/design/VqQmVN9QCFyucIXSoZOaZ0/PS-2024.2-eject?node-id=0-1&node-type=canvas&t=LFiLBmd2t94FIfve-0
 
@@ -18,3 +25,4 @@ Aplicação web do desafio ProSempre, feita usando JavaScript, HTML5 e Css3
   - npm run dev (comando para iniciar o servidor de produção local)
     
 # Frontend-ProSempre-Squad3
+
