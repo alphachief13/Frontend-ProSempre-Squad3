@@ -7,7 +7,15 @@ document.addEventListener("DOMContentLoaded", function() {
 const root = document.querySelector("#app")
 
 function renderizarCarrossel(){
+    const script1 = document.createElement('script');
+    script1.src = 'https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js';
+    script1.async = true;
+    document.body.appendChild(script1);
 
+    const script2 = document.createElement('script');
+    script2.src = 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js';
+    script2.async = true;
+    document.body.appendChild(script2);
 }
 
 // Função para renderizar a página com base no nome
@@ -22,6 +30,8 @@ function renderizar(pagina) {
         .then(data => {
             root.innerHTML = data
 
+            renderizarCarrossel();
+            
             if (pagina === "home") {
                 renderizarDivs("profissionais", profissionais, carroselEquipe) 
                 renderizarDivs("artigos", artigos, cardArtigo)
@@ -29,20 +39,11 @@ function renderizar(pagina) {
             } else if(pagina ==="pais-e-profs"){
                 renderizarDivs("cards-didaticos", cardsColorir, cards )
                 renderizarDivs("cards-materias", cardsMaterias, cards )
-                const script = document.createElement('script');
-                    script.src = 'https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js';
-                    script.async = true;
-                    document.body.appendChild(script);
-                const script2 = document.createElement('script');
-                    script2.src = 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js';
-                    script2.async = true;
-                    document.body.appendChild(script2);
             }
 
             if(pagina === "forum"){
                 renderizarDivs("topicos-populares", topicosPrincipais, cardTopicosPrincipais)
                 renderizarDivs("topicos", itemTopico, cardItemTopico)
-                renderizarCarrossel();
             }
             
         })

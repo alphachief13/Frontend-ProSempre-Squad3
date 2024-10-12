@@ -1,5 +1,7 @@
 .carousel{
   gap: 10px;
+  height: 350px;
+  margin-bottom: 100px;
 }
 
 .carousel-cell {
