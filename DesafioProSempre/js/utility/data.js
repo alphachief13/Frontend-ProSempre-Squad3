@@ -62,6 +62,18 @@ const topicosPrincipais = [
         quantidadePessoas: "25",
         quantidadeTempo: "3 meses",
     },
+    {
+        titulo: "Lorem ipsum dolor sit amet",
+        conteudo: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at mauris quis magna aliquet condimentumt.",
+        quantidadePessoas: "25",
+        quantidadeTempo: "3 meses",
+    },
+    {
+        titulo: "Lorem ipsum dolor sit amet",
+        conteudo: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at mauris quis magna aliquet condimentumt.",
+        quantidadePessoas: "25",
+        quantidadeTempo: "3 meses",
+    },
 
 ]
 
