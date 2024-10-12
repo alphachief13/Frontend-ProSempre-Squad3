@@ -6,6 +6,10 @@ import { carroselEquipe, cardArtigo, cardTopicosPrincipais, cardItemTopico, card
 document.addEventListener("DOMContentLoaded", function() {
 const root = document.querySelector("#app")
 
+function renderizarCarrossel(){
+
+}
+
 // Função para renderizar a página com base no nome
 function renderizar(pagina) {
     fetch(`./paginas/${pagina}/${pagina}.html`)
@@ -29,8 +33,8 @@ function renderizar(pagina) {
 
             if(pagina === "forum"){
                 renderizarDivs("topicos-populares", topicosPrincipais, cardTopicosPrincipais)
-                
                 renderizarDivs("topicos", itemTopico, cardItemTopico)
+                renderizarCarrossel();
             }
             
         })
